@@ -14,8 +14,6 @@ use std::io::{BufWriter, IsTerminal, Read, stderr, stdin};
 use std::path::PathBuf;
 
 #[derive(Parser)]
-#[command(name = "breeze")]
-#[command(about = "A terminal-based file explorer")]
 pub struct Args {
     #[arg(default_value = ".")]
     pub directory: PathBuf,
